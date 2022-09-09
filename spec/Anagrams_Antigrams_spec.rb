@@ -11,6 +11,7 @@ describe('#Anagram') do
   expect(my_antigram.anagram_check).to(eq("WRONG"))
  end
  it("will make sure that words are anagrams with different case letters ") do
-  
-
+  my_example = Anagram.new('Study','Dusty')
+  expect(my_example.anagram_check).to(eq("this is an anagram"))
+ end
 end
