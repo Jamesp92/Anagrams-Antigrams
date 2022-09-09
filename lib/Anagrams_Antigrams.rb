@@ -7,7 +7,8 @@ class Anagram
     @word2 = word2
   end
    def anagram_check()
-
+    
+    
     if (@word1.chars.sort == @word2.chars.sort)
     return "this is an anagram"
     else 
