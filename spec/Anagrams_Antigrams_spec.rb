@@ -14,4 +14,8 @@ describe('#Anagram') do
   my_example = Anagram.new('Study','Dusty')
   expect(my_example.anagram_check).to(eq("this is an anagram"))
  end
+ it('will check if word contains a,e,i,o,u or y') do 
+  my_words = Anagram.new('ptg','bnd')
+  expect(my_words.anagram_check).to(eq('please enter real words'))
+ end
 end
