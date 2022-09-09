@@ -10,4 +10,7 @@ describe('#Anagram') do
   my_antigram = Anagram.new('example','olive')
   expect(my_antigram.anagram_check).to(eq("WRONG"))
  end
+ it("will make sure that words are anagrams with different case letters ") do
+  
+
 end
