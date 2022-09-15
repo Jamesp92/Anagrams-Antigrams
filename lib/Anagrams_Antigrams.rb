@@ -16,6 +16,9 @@ class Anagram
    def vowel_check()
     if !(@word1.to_s.match( /[aeiouy]/i))
       return 'please enter actual words'
+    elsif
+      !(@word2.to_s.match( /[aeiouy]/i))
+      return 'please enter actual words'
     end
   end
 end

@@ -15,9 +15,16 @@ describe('#Anagram') do
    my_example = Anagram.new('Study','Dusty')
    expect(my_example.anagram_check).to(eq("this is an anagram"))
   end
+end
+  describe('.vowel_check') do
   it('will check if word contains a,e,i,o,u or y') do 
    my_words = Anagram.new('ptg','bnd')
    expect(my_words.vowel_check).to(eq('please enter actual words'))
    end
+  end
+  describe('.letters_match')
+  it('will check if words have anyt matching letters') do
+    my_words = Anagram.new('ptg','bnd')
+    expect(my_words.letters_match).to(eq('these words have no letter matches and are antigrams'))
   end
 end 
