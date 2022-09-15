@@ -15,6 +15,10 @@ describe('#Anagram') do
    my_example = Anagram.new('Study','Dusty')
    expect(my_example.anagram_check).to(eq("this is an anagram"))
   end
+  it("will give and anagram even if there are spaces or special characters ") do
+    my_example = Anagram.new("The Morse Code",'"Here come dots!"')
+    expect(my_example.anagram_check).to(eq("this is an anagram"))
+  end
 end
   describe('.vowel_check') do
   it('will check if word contains a,e,i,o,u or y') do 
@@ -24,7 +28,10 @@ end
   end
   describe('.letters_match')
   it('will check if words have anyt matching letters') do
-    my_words = Anagram.new('hi','bye')
+    my_words = Anagram.new('ptg','bnd')
     expect(my_words.letters_match).to(eq('these words have no letter matches and are antigrams'))
   end
 end 
+
+
+
