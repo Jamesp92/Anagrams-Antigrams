@@ -3,8 +3,8 @@ require ('pry')
 class Anagram
 
   def initialize(word1 , word2)
-    @word1 = word1.downcase.chars.sort.gsub(/[^A-Za-z0-9]/, '')
-    @word2 = word2.downcase.chars.sort.gsub(/[^A-Za-z0-9]/, '')
+    @word1 = word1.gsub(/[^A-Za-z0-9]/, '').downcase.chars.sort
+    @word2 = word2.gsub(/[^A-Za-z0-9]/, '').downcase.chars.sort
   end
    def anagram_check()
     if ( @word1 == @word2 )

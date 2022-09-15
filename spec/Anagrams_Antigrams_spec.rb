@@ -15,8 +15,8 @@ describe('#Anagram') do
    my_example = Anagram.new('Study','Dusty')
    expect(my_example.anagram_check).to(eq("this is an anagram"))
   end
-  it("will give and anagram even if there are spaces or special characters ") do
-    my_example = Anagram.new("The Morse Code",'"Here come dots!"')
+  it("will give an anagram even if there are spaces or special characters ") do
+    my_example = Anagram.new("The Morse Code","Here come dots!")
     expect(my_example.anagram_check).to(eq("this is an anagram"))
   end
 end
