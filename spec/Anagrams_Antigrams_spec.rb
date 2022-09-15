@@ -24,7 +24,7 @@ end
   end
   describe('.letters_match')
   it('will check if words have anyt matching letters') do
-    my_words = Anagram.new('ptg','bnd')
+    my_words = Anagram.new('hi','bye')
     expect(my_words.letters_match).to(eq('these words have no letter matches and are antigrams'))
   end
 end 

@@ -9,3 +9,4 @@ word2 = gets.chomp
 my_anagram = Anagram.new(word1 , word2)
 puts my_anagram.anagram_check
 puts my_anagram.vowel_check
+puts my_anagram.letters_match

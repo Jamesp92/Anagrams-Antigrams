@@ -21,4 +21,9 @@ class Anagram
       return 'please enter actual words'
     end
   end
+  def letters_match()
+    if (@word1.none? { |letter| @word2.include?(letter)})
+      return 'these words have no letter matches and are antigrams'
+    end
+  end
 end
